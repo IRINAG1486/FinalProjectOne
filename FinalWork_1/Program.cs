@@ -11,7 +11,7 @@ string [] ChangeArray (string [] array)
         if (array[i].Length <= 3)
         {
             changedArray [counter] = array[i];
-            conter++;
+            counter++;
         }
     }
     return changedArray;
@@ -25,3 +25,8 @@ void ShowArray (string [] array)
     }
     Console.WriteLine();
 }
+
+string [] givenArray = {"Hello", "000", "11", "2", "Goodbye", "Bye", "Hi", "Yes", "No"};
+ShowArray (givenArray);
+string [] newArray = ChangeArray (givenArray);
+ShowArray (newArray);
